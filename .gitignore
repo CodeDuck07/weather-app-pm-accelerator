@@ -1,0 +1,12 @@
+node_modules
+.next
+.npm-cache
+.tarball-cache
+*.tgz
+prisma/*.db
+prisma/*.db-journal
+.env
+.DS_Store
+scripts/__pycache__
+*.log
+.vercel

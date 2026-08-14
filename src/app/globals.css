@@ -1,0 +1,133 @@
+:root {
+  --bg: #0b1220;
+  --panel: #121a2b;
+  --panel-2: #182236;
+  --text: #e8eefc;
+  --muted: #9aabc8;
+  --accent: #3db8ff;
+  --accent-2: #7ee0a8;
+  --danger: #ff7b7b;
+  --border: #24324d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #1a3a5c 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #163528 0%, transparent 50%),
+    var(--bg);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: var(--accent);
+}
+
+main {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.25rem 0 3rem;
+}
+
+.panel {
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1f6feb, #2ea043);
+  border-color: transparent;
+}
+
+.btn-danger {
+  background: #3a1d1d;
+  border-color: #6b2d2d;
+  color: #ffd7d7;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #0d1524;
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+}
+
+.input:focus {
+  outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  border-color: var(--accent);
+}
+
+.grid-forecast {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .grid-forecast {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .grid-forecast {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error-box {
+  border: 1px solid #6b2d2d;
+  background: #2a1515;
+  color: #ffd0d0;
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.6rem;
+}
+
+@media (max-width: 700px) {
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+}
