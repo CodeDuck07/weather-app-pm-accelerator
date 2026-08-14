@@ -88,4 +88,4 @@ No weather API key is required (Open-Meteo).
 - Dependencies are listed in `package.json`.
 
 ## Demo video
-_Add your public demo URL here before submitting the Google Form._
+https://drive.google.com/file/d/1NON5BOCLcR-or_cRuLLntjtNvg1m3tCE/view?usp=sharing
